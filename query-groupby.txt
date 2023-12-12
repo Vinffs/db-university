@@ -11,3 +11,4 @@ SELECT `exam_id`, MIN(`vote`) AS `lowest_vote` FROM `exam_student` GROUP BY `exa
 
 
 4. Contare gli appelli d'esame del mese di luglio raggruppati per giorno
+SELECT COUNT(`course_id`) AS `num_courses`, DAY(`date`) AS `day` FROM `exams` WHERE MONTH(`date`) = '07' GROUP BY `day`;
