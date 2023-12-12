@@ -14,3 +14,7 @@
 Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi di stabilirne le relazioni. Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella. <br>
 Utilizzare https://www.diagrams.net/ per la creazione dello schema.
 Esportare quindi il diagramma in jpg o png e caricarlo nella repo.
+
+# Dopo aver creato un nuovo database nel vostro phpMyAdmin e aver importato lo schema allegato, eseguite le query del file allegato.
+Cosa consegnare?
+Dopo aver testato le vostre query con phpMyAdmin, riportatele in un file txt e caricatelo nella vostra repo.
