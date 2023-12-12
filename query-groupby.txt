@@ -7,6 +7,7 @@ SELECT COUNT(`id`) AS `num_students` , YEAR(`date_of_birth`) AS `year_of_birth` 
 
 
 3. Selezionare il voto più basso dato ad ogni appello d'esame
+SELECT `exam_id`, MIN(`vote`) AS `lowest_vote` FROM `exam_student` GROUP BY `exam_id`;
 
 
 4. Contare gli appelli d'esame del mese di luglio raggruppati per giorno
