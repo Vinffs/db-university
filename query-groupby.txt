@@ -1,4 +1,5 @@
 1. Contare i corsi raggruppati per cfu
+SELECT COUNT(`id`) AS `num_courses`, `cfu` FROM `courses` GROUP BY `cfu`;
 
 
 2. Contare gli studenti raggruppati per anno di nascita
