@@ -1,3 +1,4 @@
+Ex - 1
 1. Contare i corsi raggruppati per cfu
 SELECT COUNT(`id`) AS `num_courses`, `cfu` FROM `courses` GROUP BY `cfu`;
 
@@ -12,3 +13,21 @@ SELECT `exam_id`, MIN(`vote`) AS `lowest_vote` FROM `exam_student` GROUP BY `exa
 
 4. Contare gli appelli d'esame del mese di luglio raggruppati per giorno
 SELECT COUNT(`course_id`) AS `num_courses`, DAY(`date`) AS `day` FROM `exams` WHERE MONTH(`date`) = '07' GROUP BY `day`;
+
+
+Ex - 2
+
+1. Contare quanti iscritti ci sono stati ogni anno
+SELECT COUNT(`id`) AS `num_of_enrolments` , YEAR(`enrolment_date`) AS `year` FROM `students` GROUP BY `year`;
+
+
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+SELECT COUNT(*) AS `num_insegnanti`, `office address` FROM `teachers` GROUP BY `office_address`;
+
+
+3. Calcolare la media dei voti di ogni appello d'esame
+SELECT `exam_id` AS `exams`, AVG(vote) AS `vote_average` FROM `exam_student` GROUP BY `exams`;
+
+
+4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT `department_id`, COUNT(id) AS `numero_corsi_laurea` FROM `degrees` GROUP BY `department_id`;
